@@ -33,18 +33,39 @@ console.log(numberOfSeries); */
 
 // (age>25) ? console.log("Horror films") : console.log("Carton")
 
-const color = "green";
+// const color = "green";
 
-switch(color){
-    case "red":
-        console.log("Stop");
-        break;
-    case "green":
-        console.log("GO");
-        break;
-    case "yellow":
-        console.log("Slowly");
-        break;
-    default:
-        console.log("Traffic jam");
+// switch(color){
+//     case "red":
+//         console.log("Stop");
+//         break;
+//     case "green":
+//         console.log("GO");
+//         break;
+//     case "yellow":
+//         console.log("Slowly");
+//         break;
+//     default:
+//         console.log("Traffic jam");
+// }
+
+// let a=1;
+
+// while (a<100){
+//     console.log(a);
+//     a++;
+// }
+
+// let a=1;
+
+// do {
+//     console.log(a);
+//     a++;
+// }
+// while(a<=100);
+
+let a=1;
+
+for(a=1; a<=10; a++){
+    console.log(a);
 }
