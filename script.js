@@ -64,8 +64,43 @@ console.log(numberOfSeries); */
 // }
 // while(a<=100);
 
-let a=1;
+// let a=1;
 
-for(a=1; a<=10; a++){
-    console.log(a);
+// for(a=1; a<=10; a++){
+//     console.log(a);
+// }
+
+const numberOfSeries = +prompt("Nechta serial ko'rdingiz", "");
+
+const seriesDB = {
+    count: numberOfSeries,
+    series:{},
+    actors:{},
+    genres:[],
+    privat: false,
+};
+ 
+
+for(let i=0; i<2; i++ ){
+    const a = prompt("Oxirgi ko'rgan serialgiz?"),
+      b = prompt("Nechi baho berasiz");
+    if( a != null && b != null && a !=" " && b != ""){
+        seriesDB.series[a]=b;
+        console.log("Done");
+    } else{
+        console.log("Error");
+        i--;
+    }   
 }
+
+if(seriesDB.count<5){
+ console.log("Kam serial ko'ribsiz");
+}else if(seriesDB.count >=5 && seriesDB.count < 10){
+    console.log("Siz classik tomoshabin ekansiz");
+}else{
+    console.log("Siz serialchi zvezda ekansiz");
+}
+
+console.log(seriesDB);
+
+
