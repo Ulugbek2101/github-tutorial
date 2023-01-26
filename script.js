@@ -70,37 +70,64 @@ console.log(numberOfSeries); */
 //     console.log(a);
 // }
 
-const numberOfSeries = +prompt("Nechta serial ko'rdingiz", "");
+// const numberOfSeries = +prompt("Nechta serial ko'rdingiz", "");
 
-const seriesDB = {
-    count: numberOfSeries,
-    series:{},
-    actors:{},
-    genres:[],
-    privat: false,
-};
+// const seriesDB = {
+//     count: numberOfSeries,
+//     series:{},
+//     actors:{},
+//     genres:[],
+//     privat: false,
+// };
  
 
-for(let i=0; i<2; i++ ){
-    const a = prompt("Oxirgi ko'rgan serialgiz?"),
-      b = prompt("Nechi baho berasiz");
-    if( a != null && b != null && a !=" " && b != ""){
-        seriesDB.series[a]=b;
-        console.log("Done");
-    } else{
-        console.log("Error");
-        i--;
-    }   
+// for(let i=0; i<2; i++ ){
+//     const a = prompt("Oxirgi ko'rgan serialgiz?"),
+//       b = prompt("Nechi baho berasiz");
+//     if( a != null && b != null && a !=" " && b != ""){
+//         seriesDB.series[a]=b;
+//         console.log("Done");
+//     } else{
+//         console.log("Error");
+//         i--;
+//     }   
+// }
+
+// if(seriesDB.count<5){
+//  console.log("Kam serial ko'ribsiz");
+// }else if(seriesDB.count >=5 && seriesDB.count < 10){
+//     console.log("Siz classik tomoshabin ekansiz");
+// }else{
+//     console.log("Siz serialchi zvezda ekansiz");
+// }
+
+// console.log(seriesDB);
+
+
+// 26.01.2023
+
+//  function declaration
+function sayHello(text){
+    console.log(text);
 }
 
-if(seriesDB.count<5){
- console.log("Kam serial ko'ribsiz");
-}else if(seriesDB.count >=5 && seriesDB.count < 10){
-    console.log("Siz classik tomoshabin ekansiz");
-}else{
-    console.log("Siz serialchi zvezda ekansiz");
+sayHello("Hello world");
+
+
+function calc(a, b){
+    return a+b;
 }
 
-console.log(seriesDB);
+console.log(calc(20, 5));
 
+// function expression
+const  logger = function(a, b){
+    return a+b;
+};
 
+console.log(logger(12, 7));
+
+// Arrow function 
+const   calc = (a, b) => a+b;
+
+console.log(calc(12, 10));
